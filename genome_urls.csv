@@ -1,0 +1,5 @@
+id,sp,nt_url,aa_url
+0,Mnemiopsis leidyi,https://s3.amazonaws.com/animal-genomes/nt/Mnemiopsis_leidyi_ML2_2_trimmed.fna,https://s3.amazonaws.com/animal-genomes/aa/Mnemiopsis_leidyi_ML2_2.faa
+1,Strongylocentrotus purpuratus,https://s3.amazonaws.com/animal-genomes/nt/Strongylocentrotus_purpuratus_Nucleotides.fna,https://s3.amazonaws.com/animal-genomes/aa/Strongylocentrotus_purpuratus_Peptides.faa
+2,Ptychodera flava,https://s3.amazonaws.com/animal-genomes/nt/Ptychodera_flava_mrna_trimmed.fna,https://s3.amazonaws.com/animal-genomes/aa/Ptychodera_flava_prot.faa
+3,Nematostella vectensis,https://s3.amazonaws.com/animal-genomes/nt/Nematostella_vectensis_transcripts_trimmed.fna,https://s3.amazonaws.com/animal-genomes/aa/Nematostella_vectensis_proteins_new_headers.faa

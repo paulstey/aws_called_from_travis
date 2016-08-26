@@ -1,0 +1,29 @@
+# Documentation: http://docs.travis-ci.com/user/languages/python/
+language: python
+os:
+  - linux
+env:
+  - GH_USERNAME=paulstey GH_EMAIL=paulstey@gmail.com GH_REPONAME=aws_called_from_travis
+python:
+  - 2.7
+install:
+  - pip install -r requirements.txt
+notifications:
+  email: false
+before_install:
+  - pwd
+  - git branch -a
+script:
+  - cat input.txt
+  # - ./change_branch.sh                                  # comment out for initial push
+  # - git checkout tree/gh-pages -- results_table.csv
+  - pwd
+  - git remote -v
+  - python run_assessment.py input.txt > output.txt
+  - cat output.txt
+after_success:
+  - pwd
+  - git remote -v
+  - cat output.txt > README.md
+  - ./initial_push.sh
+  # - ./all_other_pushes.sh
